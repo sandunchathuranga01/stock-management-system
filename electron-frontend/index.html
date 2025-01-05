@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Stock Management</h1>
+  
+  <!-- Form to create a new product -->
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Product Name" required>
+    <input type="number" id="quantity" placeholder="Quantity" required>
+    <input type="number" id="price" placeholder="Price" required>
+    <button type="submit">Add Product</button>
+  </form>
+
+  <!-- Table to display products -->
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Product rows will be dynamically inserted here -->
+    </tbody>
+  </table>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
